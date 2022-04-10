@@ -2,9 +2,9 @@
   <head>
     <title>Register Hospital</title>
   </head>
-  <body style="margin: 40px; background-color: antiquewhite;">
-    <h1 style="text-align:center">Electronic Medical Data Recording System</h1>
-    <p style="text-align: center;">
+  <body style="margin: 40px; background-color: antiquewhite">
+    <h1 style="text-align: center">Electronic Medical Data Recording System</h1>
+    <p style="text-align: center">
       <a href="doctor.html"
         ><button type="submit" class="hidden" style="margin-right: 16px">
           Doctor Registration
@@ -53,7 +53,8 @@
           //window.web3 = new Web3(web3.currentProvider);
           window.web3 = new Web3(
             new Web3.providers.HttpProvider(
-              "https://eth-ropsten.alchemyapi.io/v2/up3jQUJgt3di2Z0FPaexBq2FQXILunaL"
+              //"https://eth-ropsten.alchemyapi.io/v2/up3jQUJgt3di2Z0FPaexBq2FQXILunaL"
+              "http://localhost:8545"
             )
           );
         }
@@ -127,7 +128,7 @@
           type: "function",
         },
       ];
-      var contractaddress = "0xe752879DFE5140AC2665FB18af7B8fc1abd389d2";
+      var contractaddress = "0xe335b3aCd1520a7aB45cCF426Cbd72Fc873b3154";
 
       function add_details() {
         var myContract = new web3.eth.Contract(abi, contractaddress, {

@@ -53,7 +53,8 @@
           //window.web3 = new Web3(web3.currentProvider);
           window.web3 = new Web3(
             new Web3.providers.HttpProvider(
-              "https://eth-ropsten.alchemyapi.io/v2/up3jQUJgt3di2Z0FPaexBq2FQXILunaL"
+              //"https://eth-ropsten.alchemyapi.io/v2/up3jQUJgt3di2Z0FPaexBq2FQXILunaL"
+              "http://localhost:8545"
             )
           );
         }
@@ -829,7 +830,7 @@
           type: "function",
         },
       ];
-      var contractaddress = "0xf5c533792dc9d431F202B9b722bCaF8B0EC36faD";
+      var contractaddress = "0xCa756F5cbbCe09E4e67cb6A4641ad22476365Fa9";
       function date_details() {
         var myContract = new web3.eth.Contract(abi, contractaddress, {
           from: account,
